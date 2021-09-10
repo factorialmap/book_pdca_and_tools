@@ -1,9 +1,30 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "O uso do Método PDCA e Ferramentas da qualidade na Agroindústria"
+author: "Marcelo Carvalho"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# Introdução {-}
+
+
+## Ideia {-}
+
+O objetivo prático do método PDCA e as ferramentas da qualidade são os de auxiliar na identificação e solução de problemas que podem ser tanto na melhoria de gestão de recursos quanto na geração de novas ideias e oportunidades.
+
+## Fenômenos observados no presente ao redor do mundo {-}
+
+- Transições demográficas 
+
+- Tecnologias disrruptivas
+
+- Atividade economica em países emergentes
+
+- Mudanças climáticas
+
+## Desafios na Agroindústria {-}
+
+- Demanda
+
+- Oferta
 

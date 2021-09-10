@@ -1,0 +1,17 @@
+conceitos
+método-pdca
+ferramentas-da-qualidade
+os-5s
+seiri---arrumação
+seiton---ordenação
+seiso---limpeza
+seiketsu-higiene
+shitsuke-disciplina
+gráfico-de-pareto
+o-diagrama-de-causa-e-efeitoishikawa
+fluxograma-de-processos
+folha-de-verificação-check-list
+método-5-porquês
+relatório-de-três-gerações
+gráfico-de-controle
+plano-de-ação

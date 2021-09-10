@@ -1,0 +1,9 @@
+# Gráfico de Pareto
+
+O gráfico de Pareto, é uma ferramenta que tem como objetivo principal identificar quais causas seriam responsáveis pela maior parcela dos efeitos.
+
+Sua origem decorre de estudos do economista italiano Vilfredo Pareto, no qual ele afirma que para muitos fenômenos, 80% das consequências advêm de 20% das causas. Esses estudos foram aprofundados por Joseph Moses Juran, o qual expandiu essa lei para a esfera organizacional nos Estados Unidos a partir da década de 1930 (BRASSARD, 1994).	
+
+O gráfico de Pareto, também conhecido como diagrama 80/20, é um tipo específico de histograma ordenado por frequência de ocorrência da maior para a menor, permitindo assim a priorização das ações partindo-se do princípio de Pareto, de que há muitos efeitos sem importância diante de outros mais graves (BRASSARD, 1994).
+
+Mesmo como priorização dos efeitos com maior número de ocorrências apresentados no gráfico de Pareto, os demais também são importantes e não devem ser descartados ou ignorados, pois contrariam a teoria da confiabilidade de Russel, a qual defende que mesmo os problemas de pequenas proporções quando somados a outros da mesma dimensão, resultam em um conjunto com confiabilidade bastante reduzida (NAKATA, 2000).

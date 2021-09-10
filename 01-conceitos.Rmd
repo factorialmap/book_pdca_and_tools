@@ -1,0 +1,33 @@
+
+# Conceitos
+
+## Método PDCA
+
+O PDCA é um método criado para auxiliar os gestores na identificação e solução de problemas. Ele mostra de forma simplificada e organizada o caminho a ser percorrido na busca de melhoria contínua.
+
+Também conhecido como ciclo de Shewhart ou ciclo de Deming, foi concluído em 1930 por Walter Shewhart no Bell Laboratories, que, analisando estatisticamente o controle de processos, criou um modelo que poderia ser aplicado em qualquer situação (WERKEMA, 1995). 
+
+O estatístico norte americano William Edwards Deming foi o responsável por propagar a idéia no Japão após a segunda guerra mundial. Desde então, obteve-se a popularização ao redor do mundo, das técnicas e da qualidade dos produtos japoneses, os quais antes da guerra competiam no mercado internacional apenas em preço e não em qualidade.
+
+Segundo Campos (1995), o ciclo PDCA tem por princípio tornar mais claras e ágeis as etapas no processo de gerenciamento as quais são assim divididas:
+
+- **PLAN (Planejamento)** - Etapa que tem por objetivo, identificar oportunidades ou problemas, analisar os fenômenos e causas reais, estabelecer metas e determinar os procedimentos necessários para o cumprimento desses nos prazos estabelecidos.
+
+- **DO (Execução)** - Realizar ou executar as ações propostas na etapa anterior ou **Plan**, por meio da busca pelo aprendizado.
+
+- **CHECK (Verificação)** – É a etapa en que são realizados as avaliações, o monitoramento e o controle das ações que estão sendo executadas, comparando-se os resultados com o que foi planejado na etapa **Plan**.
+
+- **ACT (Ação e padronização)** - Etapa de validação dos resultados os quais poderão ser adotados como padrão  caso o objetivo tenha sido alcançado.
+ 
+
+## Ferramentas da qualidade
+
+As ferramentas da qualidade modernas foram descobertas na década de 1930 nos Estados Unidos, com a aplicação industrial do gráfico de controle criado por Walter Shewhart da empresa de telefonia Bell Telephone Laboratories. 
+
+Shewhart, que propôs um gráfico de controle para análise de dados resultantes de inspeção, fazendo com que a importância dada a procedimentos de inspeção e correção de produtos defeituosos começasse a ser substituída por estudos e prevenção dos problemas relacionados à qualidade, de modo a garantir que o possível defeito do produto fosse eliminado durante o processo e não após o término (FERRO, 1997).
+
+Após a segunda guerra mundial, o Japão em especial, passou por uma verdadeira revolução, onde a qualidade dos produtos e serviços nunca foi tão discutida, estudada e aplicada. Grandes nomes como Shewhart, Deming, Juran e Ishikawa, desenvolveram ou ajudaram a disseminar algumas ferramentas que permitiram um maior controle dos processos ou melhoria nas tomadas de decisões (CAMPOS, 1995). 
+
+Nas décadas de 1970 e 1980, essas técnicas e ferramentas começaram a ser introduzidas em empresas de diversos países da Ásia, Europa, América do Norte e América Latina, influenciados principalmente pela maior competitividade dos produtos japoneses por meio de alta qualidade e preços competitivos (FERRO, 1997).
+
+No Brasil, o uso de ferramentas da qualidade na gestão de empresas ocorreu por volta de 1970, sendo introduzido em algumas empresas como Volkswagen, Johnson & Johnson e Embraer, tendo seu movimento impulsionado em 1986, quando o professor Ishikawa esteve no país.
