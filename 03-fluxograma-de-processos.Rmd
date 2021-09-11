@@ -1,5 +1,37 @@
 # Fluxograma de Processos
 
+## O que é {-}
+
+## Qual o objetivo {-}
+
+- A
+- B
+- C
+
+## De onde vem {-}
+
+- A
+- B
+- C
+
+## Como fazer {-}
+
+- A
+- B
+- C
+
+## Pra onde vai {-}
+
+- A
+- B
+- C
+
+## Qual o resultado {-}
+
+- A
+- B
+- C
+
 O fluxograma é uma representação gráfica das etapas de um processo e a relação entre elas. É bastante utilizado para entender um processo e identificar as oportunidades de melhoria, facilitar a comunicação entre as pessoas envolvidas no processo e disseminar informações. Além da sequência de atividades, o fluxograma mostra o que é realizado em cada etapa, materiais e serviços que entram e saem do processo, decisões que devem ser tomadas e também as pessoas envolvidas. Utiliza símbolos que são reconhecidos facilmente para representar cada etapa, pessoas ou setores envolvidos no processo (BRASSARD, 1994). 
 
 Existem vários tipos de fluxogramas, no entanto, o mais utilizado é o fluxograma de bloco. Os símbolos mais comuns utilizados na montagem de um fluxograma de bloco são: 

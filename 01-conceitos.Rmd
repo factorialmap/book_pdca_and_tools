@@ -1,4 +1,3 @@
-
 # Conceitos
 
 ## Método PDCA
@@ -18,7 +17,8 @@ Segundo Campos (1995), o ciclo PDCA tem por princípio tornar mais claras e áge
 - **CHECK (Verificação)** – É a etapa en que são realizados as avaliações, o monitoramento e o controle das ações que estão sendo executadas, comparando-se os resultados com o que foi planejado na etapa **Plan**.
 
 - **ACT (Ação e padronização)** - Etapa de validação dos resultados os quais poderão ser adotados como padrão  caso o objetivo tenha sido alcançado.
- 
+
+![Figura 1 - Ilustração médoto PDCA](images/pdca_chart.png)
 
 ## Ferramentas da qualidade
 

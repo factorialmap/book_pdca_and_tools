@@ -1,5 +1,37 @@
 # Diagrama de Causa e Efeito(Ishikawa)
 
+## O que é {-}
+
+## Qual o objetivo {-}
+
+- A
+- B
+- C
+
+## De onde vem {-}
+
+- A
+- B
+- C
+
+## Como fazer {-}
+
+- A
+- B
+- C
+
+## Pra onde vai {-}
+
+- A
+- B
+- C
+
+## Qual o resultado {-}
+
+- A
+- B
+- C
+
 O diagrama de causa e efeito, também conhecido como diagrama de Ishikawa ou espinha de peixe, é uma ferramenta gráfica utilizada no gerenciamento de diversos processos e de diversos projetos. Originalmente, proposto pelo engenheiro químico japonês Kaoru Ishikawa em 1943, e aperfeiçoado nos anos seguintes, o diagrama de Ishikawa (Figura 5) permite que seja identificada uma relação significativa entre o efeito e suas possíveis causas (WERKEMA, 1995).
 
 Essa ferramenta foi utilizada pela primeira vez no Japão por volta de 1953, com o objetivo de sintetizar as opiniões dos engenheiros de uma fábrica quando estes discutem problemas referentes à qualidade dos produtos (SEBRAE, 2009), 
