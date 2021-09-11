@@ -3,10 +3,10 @@ title: "O Método PDCA e Ferramentas da Qualidade"
 author: "Marcelo Carvalho"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-description: "Guia prático de aplicação do método pdca e ferramentas da qualidade"
+description: "Guia prático do método pdca e ferramentas da qualidade"
+cover-image: "images/pdca_capa.png"
 url: 'https://factorialmap.github.io/book_pdca_and_tools/'
 github-repo: "factorialmap/book_pdca_and_tools"
-cover-image: "images/pdca_capa.png"
 apple-touch-icon: "touch-icon.png"
 apple-touch-icon-size: 120
 favicon: "favicon.ico"
