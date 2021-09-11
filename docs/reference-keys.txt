@@ -1,14 +1,14 @@
 conceitos
 método-pdca
 ferramentas-da-qualidade
-folha-de-verificação-check-list
 fluxograma-de-processos
-gráfico-de-pareto
+folha-de-verificação-check-list
 gráfico-de-disperção
 diagrama-de-causa-e-efeitoishikawa
+gráfico-de-pareto
 método-5-porquês
-plano-de-ação
 gráfico-de-controle
+plano-de-ação
 relatório-de-três-gerações
 os-5s
 seiri---arrumação

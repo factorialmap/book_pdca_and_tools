@@ -24,12 +24,6 @@ Este é um livro técnico e para facilitar o entendimento dos temas abordados e 
 - **Qual o resultado**: é a descrição dos resultados esperados, desejados ou comprovados.
 
 
-## Sobre o livro {-}
-
-O tema central é a aplicação do método PDCA e ferramentas da qualidade e é uma etapa complementar a pesquisa de mestrado de 2010 na área do agronegócio onde foram adicionados elementos como mapas, desenhos, práticas de uso e código reproduzível.
-
-Embora a pesquisa tenha sido feita no agronegócio, os conceitos abordados já foram testados, validados e usados em outras áreas ao longo do tempo por personagens muito conhecidos no meio científico como Galileu Galilei, Da Vinci, Copérnico, Shewhart, Deming entre outros.
-
 ## Objetivo {-}
 
 A ideia central desse trabalho é possibilitar que conceitos utilizados a algumas centenas de anos que foram testados novamente e validados 2010 possam ser usados na melhoria do desenvolvimento humano seja nos negócios, projetos pessoais ou comunitários dentro e fora do agronegócio e alguns objetivos foram definidos:
