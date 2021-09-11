@@ -15,8 +15,8 @@ favicon: "favicon.ico"
 
 # Preface {-}
 
-O tema central é a aplicação do método PDCA e ferramentas da qualidade e é uma etapa complementar a pesquisa de mestrado de 2010 na área do agronegócio onde foram adicionados elementos como mapas, desenhos, práticas de uso e código reproduzível.
+O tema central do livro é a aplicação do método PDCA e ferramentas da qualidade e é uma etapa complementar de pesquisa de mestrado de 2010 na área do agronegócio onde foram adicionados elementos como mapas, desenhos, práticas de uso e código reproduzível.
 
-Embora a pesquisa tenha sido feita no agronegócio, os conceitos abordados já foram testados, validados e usados em outras áreas ao longo do tempo por personagens muito conhecidos no meio científico como Galileu Galilei, Da Vinci, Copérnico, Shewhart, Deming entre outros.
+Embora a pesquisa tenha sido feita no agronegócio, os conceitos abordados já foram testados, validados e usados em outras áreas ao longo do tempo por pesquisadores muito conhecidos no meio científico como Galileu Galilei, Da Vinci, Copérnico, Shewhart, Deming entre outros.
 
 <p align="center">![O método PDCA e Ferramentas da Qualidade](images/pdca_capa.png)</p>
