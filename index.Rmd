@@ -4,9 +4,9 @@ author: "Marcelo Carvalho"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 description: "Guia prático do método pdca e ferramentas da qualidade"
-url: 'https://factorialmap.github.io/book_pdca_and_tools/'
-github-repo: "factorialmap/book_pdca_and_tools"
-cover-image: "pdca_capa.png"
+url: 'https\://factorialmap.github.io/book_pdca_and_tools/'
+github-repo: factorialmap/book_pdca_and_tools
+cover-image: images/pdca_capa.png
 apple-touch-icon: "touch-icon.png"
 apple-touch-icon-size: 120
 favicon: "favicon.ico"
@@ -14,6 +14,8 @@ favicon: "favicon.ico"
 
 
 # Prefácio {-}
+
+<p align="center">![O método PDCA e Ferramentas da Qualidade](images/pdca_capa.png)</p>
 
 O tema central do livro é a aplicação do método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade que são instrumentos usados na identificação e solução de problemas. É uma etapa complementar de pesquisa de mestrado de 2010 na área de agronegócio onde foram adicionados mapas, desenhos, exemplos práticos de uso e código reproduzível para que o leitor consiga replicar.
 
