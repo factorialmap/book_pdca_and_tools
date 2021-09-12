@@ -4,7 +4,7 @@ author: "Marcelo Carvalho"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 description: "Guia prático do método pdca e ferramentas da qualidade"
-cover-image: "pdca_capa.png"
+cover-image: "pdca_capa.PNG"
 url: 'https://factorialmap.github.io/book_pdca_and_tools/'
 github-repo: "factorialmap/book_pdca_and_tools"
 apple-touch-icon: "touch-icon.png"
