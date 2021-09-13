@@ -10,8 +10,9 @@ lot: yes
 lof: yes
 site: bookdown::bookdown_site
 github-repo: factorialmap/book_pdca_and_tools
-url: 'https\://factorialmap.github.io/book_pdca_and_tools/'
+url: 'https://factorialmap.github.io/book_pdca_and_tools/'
 cover-image: images/pdca_capa.png
+
 ---
 
 
