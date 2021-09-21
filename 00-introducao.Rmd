@@ -1,0 +1,57 @@
+--- 
+title: "O Método PDCA e Ferramentas da Qualidade para melhoria contínua"
+author: "Marcelo Carvalho"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+description: "Guia prático de aplicação do método pdca e ferramentas da qualidade em projetos de melhoria contínua de processos"
+url: 'https://factorialmap.github.io/book_pdca_and_tools/'
+github-repo: "factorialmap/book_pdca_and_tools"
+cover-image: "images/pdca_capa.png"
+apple-touch-icon: "touch-icon.png"
+apple-touch-icon-size: 120
+favicon: "favicon.ico"
+---
+
+# Introdução {-}
+
+Este é um livro técnico e prático e visando facilitar o entendimento dos temas abordados e das premissas que serão guias para coloboração, optei por organizá-lo da seguinte forma:
+
+- **O que é**: ou qual a ideia disso que esta sendo abordado.
+- **Qual o objetivo**: pra que isso está sendo, ou foi desenvolvido. Pode ter mais que um.
+- **De onde vem**: são as necessidades ou a origem dessa demanda ou etapa. A motivação.
+- **Como fazer**: é o procedimento, código, sequência ou fluxo. É importante que seja reproduzível.
+- **Pra onde vai**: é o destino. Quem é o consumidor ou qual a aplicação prática disso.
+- **Qual o resultado**: é a descrição dos resultados esperados, desejados ou comprovados.
+
+
+## Objetivo {-}
+
+O objetivo desse trabalho é possibilitar que as ideias e conceitos desenvolvidos a algumas centenas de anos e que foram testados  e validados novamente em 2010 possam ser usados na melhoria do desenvolvimento humano seja nos negócios, projetos pessoais ou comunitários dentro e fora do agronegócio. Para isso, alguns objetivos foram definidos:
+
+- Facilitar o entendimento dos conceitos usando linguagem simples e exemplos práticos do dia a dia.
+
+- Permitir a replicação usando código reproduzível na linguagem de computação científica R.
+
+- Permitir a interação e compartilhamento de ideias e experiências. O leitor poderá sugerir,  fazer alterações, adicionar complementos e ideias que enriqueça esse trabalho para todos.
+
+- Ser um gatilho para reflexão e geração de ideias próprias ao invés de um livro de boas práticas.
+
+## Motivação {-}
+
+Em 2020, momento em que este livro está sendo escrito, fenômenos importantes estão acontecendo e optei por destacar quatro deles os quais podem se tornar desafiadores para todos as nações.
+
+- **Transição demográfica** que remete a ideia de desafios estruturais e se refere a mudança histórica de taxas de natalidade, mortalidade e crescimento populacional decorrentes do avanço da medicina, urbanização e desenvolvimento de novas técnologias.
+  - **Estamos ficando mais velhos** os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.
+  - **Estamos ficando mais urbanos** em 2020 cerca de 55% da população mundial vive em vilas e cidades. O acesso a economia e a sociedade digital em áreas ruais é um processo contínuo onde pequenos agricultores podem desempenhar papel vital na produção de alimentos e na proteção do meio ambiente.
+  
+- **Desenvolvimento de tecnologias disruptivas** que remete a ideia de produtividade total dos fatores com aumento da interação e de descobertas científicas e instrumentos que potencializam as capacidades humanas como inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição genética CRISPR e luz sincrotron em constante evolução modificando significativamente o modo como as coisas são feitas. 
+
+- **Atividade economica em países emergentes**  que remete a ideia de mudança no padrão de vida. Em 2020 países como Indonésia, Africa do Sul, Russia, México, Malasia, Colombia, Polônia, Chile, Hingria, Tailandia, Turquia, Brasil, China e Índia são considerandos países emergentes. Boa parte desses países, têm feito progressos notáveis no fortalecimento de seus políticas macroeconômicas desde a virada do século o que os permitiu mais do que dobrar a renda per capita em média. 
+
+- **Mudanças climáticas** que remete ao habito de consumo e impactam diretamente no comportamento das pessoas, na demanda de produtos e serviços, nos meios de produção e na forma como as coisas são consumidas.
+
+## Desafios da Agroindustria {-}
+
+- **Na perspectiva de demanda** necessidades cada vez maiores de produtos(volume e variedade), exigência por qualidade, segurança, cuidado com o meio ambiente e com as comunidades também são demandas crescentes.
+
+- **Na perspectiva de produção** necessidade de melhorias nas práticas de cultivo para lidar com trade-off entre aumento de demanda e restrições de área, outros fatores como ganhos de produtivide, eficiência no aproveitamente de recursos e redução de desperdícios e perdas pode se tornar variáveis mais importantes na competitividade global.

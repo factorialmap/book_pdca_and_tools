@@ -21,7 +21,8 @@ cover-image: images/pdca_capa.png
 knitr::include_graphics('images/pdca_capa.png', dpi = NA)
 ```
 
-O tema central do livro é a aplicação do método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade que são instrumentos usados na identificação e solução de problemas. É uma etapa complementar de pesquisa de mestrado de 2010 na área de agronegócio onde foram adicionados mapas, desenhos, exemplos práticos de uso e código reproduzível para que o leitor consiga replicar.
+O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade são conceitos usados na identificação e solução de problemas. Este livro foi desenvolvido para permitir que leitor consiga compreender essas ideias e os conceitos, ter uma base para reflexão, incrementar ou até mesmo desenvolver seu próprio método de trabalho. Para facilitar, foram adicionados mapas, desenhos, exemplos práticos de uso e código reproduzível na linguagem técnico científica R.
 
-Embora a pesquisa tenha sido feita no agronegócio em 2010, os conceitos abordados já foram testados, validados e usados em outras áreas ao longo do tempo por pesquisadores muito conhecidos no meio científico como Galileu Galilei, Da Vinci, Copérnico, Shewhart, Deming entre outros.
+O conceitos abordados aqui tiveram seu desenvolvimento iniciados a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros e cientístas como Shewhart, Deming entre outros.
 
+Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudaram e ajudam a enriquecer o desenvolvimento desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, @paulinyzito, SilvioBras, @priscilazavadil, Ana Incerti, @Muxtaa, FlávioCorrêa

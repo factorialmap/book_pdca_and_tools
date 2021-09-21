@@ -11,8 +11,3 @@ gráfico-de-controle
 plano-de-ação
 relatório-de-três-gerações
 os-5s
-seiri---arrumação
-seiton---ordenação
-seiso---limpeza
-seiketsu-higiene
-shitsuke-disciplina
