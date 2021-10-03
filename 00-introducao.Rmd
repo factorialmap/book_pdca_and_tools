@@ -26,11 +26,11 @@ Este é um livro técnico e prático e visando facilitar o entendimento dos tema
 
 ## Objetivo {-}
 
-O objetivo desse trabalho é possibilitar que as ideias e conceitos desenvolvidos a algumas centenas de anos e que foram testados  e validados novamente em 2010 possam ser usados na melhoria do desenvolvimento humano seja nos negócios, projetos pessoais ou comunitários dentro e fora do agronegócio. Para isso, alguns objetivos foram definidos:
+Possibilitar que as ideias e conceitos desenvolvidos a mais de cem anos e que foram testados e validados novamente em 2010 possam ser usados para desenvolvimento humano seja nos negócios, projetos pessoais ou comunitários dentro e fora do agronegócio e para isso, algumas premissas foram definidas:
 
 - Facilitar o entendimento dos conceitos usando linguagem simples e exemplos práticos do dia a dia.
 
-- Permitir a replicação usando código reproduzível na linguagem de computação científica R.
+- Permitir a reprodução usando código reproduzível na linguagem de computação científica R.
 
 - Permitir a interação e compartilhamento de ideias e experiências. O leitor poderá sugerir,  fazer alterações, adicionar complementos e ideias que enriqueça esse trabalho para todos.
 
@@ -44,14 +44,14 @@ Em 2020, momento em que este livro está sendo escrito, fenômenos importantes e
   - **Estamos ficando mais velhos** os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.
   - **Estamos ficando mais urbanos** em 2020 cerca de 55% da população mundial vive em vilas e cidades. O acesso a economia e a sociedade digital em áreas ruais é um processo contínuo onde pequenos agricultores podem desempenhar papel vital na produção de alimentos e na proteção do meio ambiente.
   
-- **Desenvolvimento de tecnologias disruptivas** que remete a ideia de produtividade total dos fatores com aumento da interação e de descobertas científicas e instrumentos que potencializam as capacidades humanas como inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição genética CRISPR e luz sincrotron em constante evolução modificando significativamente o modo como as coisas são feitas. 
+- **Desenvolvimento de tecnologias disruptivas** que remete a ideia de produtividade total dos fatores, aumento da interação, de descobertas científicas e instrumentos que potencializam as capacidades humanas. A inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição genética CRISPR e luz sincrotron entre outras, estão em constante evolução modificando significativamente o modo como as coisas são feitas. 
 
 - **Atividade economica em países emergentes**  que remete a ideia de mudança no padrão de vida. Em 2020 países como Indonésia, Africa do Sul, Russia, México, Malasia, Colombia, Polônia, Chile, Hingria, Tailandia, Turquia, Brasil, China e Índia são considerandos países emergentes. Boa parte desses países, têm feito progressos notáveis no fortalecimento de seus políticas macroeconômicas desde a virada do século o que os permitiu mais do que dobrar a renda per capita em média. 
 
 - **Mudanças climáticas** que remete ao habito de consumo e impactam diretamente no comportamento das pessoas, na demanda de produtos e serviços, nos meios de produção e na forma como as coisas são consumidas.
 
-## Desafios da Agroindustria {-}
+## Desafios/Oportunidades da Agroindustria {-}
 
-- **Na perspectiva de demanda** necessidades cada vez maiores de produtos(volume e variedade), exigência por qualidade, segurança, cuidado com o meio ambiente e com as comunidades também são demandas crescentes.
+- **Na perspectiva de demanda** quantidades maiores de produtos em variedade e volume, exigência por qualidade e padronização, informação, segurança, cuidado com o meio ambiente as comunidades todas são demandas crescentes.
 
-- **Na perspectiva de produção** necessidade de melhorias nas práticas de cultivo para lidar com trade-off entre aumento de demanda e restrições de área, outros fatores como ganhos de produtivide, eficiência no aproveitamente de recursos e redução de desperdícios e perdas pode se tornar variáveis mais importantes na competitividade global.
+- **Na perspectiva de produção** melhoria na comunicação e relacionamento com consumidores, práticas de cultivo para lidar com trade-off entre aumento de demanda e restrições de área, aumento de produtivide, qualidade e  eficiência no aproveitamento de recursos, desenvolvimento de novos produtos e mercados, redução de desperdícios e perdas são variáveis importantes.

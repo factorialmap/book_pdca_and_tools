@@ -4,6 +4,10 @@
 
 O fluxograma é uma representação gráfica das etapas de um processo e a relação entre elas. Além da sequência de atividades, o fluxograma mostra o que é realizado em cada etapa, materiais e serviços que entram e saem do processo, decisões que devem ser tomadas e também as pessoas envolvidas. Utiliza símbolos que são reconhecidos facilmente para representar cada etapa, pessoas ou setores envolvidos no processo (BRASSARD, 1994). 
 
+O uso de descrições detalhadas das atividades do negócio, nos permite compreende-lo melhor e reproduzi-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão. O conjunto desses elementos (documentos e desenhos).
+
+![Figura 2 - Ideia do fluxograma de processos](images/figura_processo.png)
+
 ## Qual o objetivo {-}
 
 - Entender um processo e identificar as oportunidades de melhoria.
