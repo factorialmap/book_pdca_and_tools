@@ -21,8 +21,8 @@ cover-image: images/pdca_capa.png
 knitr::include_graphics('images/pdca_capa.png', dpi = NA)
 ```
 
-O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade são conceitos usados na identificação e solução de problemas. Este livro foi desenvolvido para permitir que leitor consiga compreender essas ideias e os conceitos, ter uma base para reflexão, incrementar ou até mesmo desenvolver seu próprio método de trabalho. Para facilitar, foram adicionados mapas, desenhos, exemplos práticos de uso e código reproduzível na linguagem técnico científica R.
+**O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade** são conceitos usados parar identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras dos conceitos e implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.
 
-O conceitos abordados aqui tiveram seu desenvolvimento iniciados a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros e cientístas como Shewhart, Deming entre outros.
+Os conceitos abordados neste livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores em muitos países.
 
-Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudaram e ajudam a enriquecer o desenvolvimento desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, @paulinyzito, SilvioBras, @priscilazavadil, Ana Incerti, @Muxtaa, FlávioCorrêa
+Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, @paulinyzito, SilvioBras, @priscilazavadil, Ana Incerti, @Muxtaa, FlávioCorrêa, @factorialmap

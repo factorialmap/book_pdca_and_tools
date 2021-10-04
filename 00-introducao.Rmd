@@ -14,37 +14,37 @@ favicon: "favicon.ico"
 
 # Introdução {-}
 
-Este é um livro técnico e prático e visando facilitar o entendimento dos temas abordados e das premissas que serão guias para coloboração, optei por organizá-lo da seguinte forma:
+Este é livro prático e para facilitar a compreensão dos temas abordados,  das regras para contribuição no conteúdo e a busca dos temas, ele será organizado da seguinte forma:
 
-- **O que é**: ou qual a ideia disso que esta sendo abordado.
-- **Qual o objetivo**: pra que isso está sendo, ou foi desenvolvido. Pode ter mais que um.
-- **De onde vem**: são as necessidades ou a origem dessa demanda ou etapa. A motivação.
-- **Como fazer**: é o procedimento, código, sequência ou fluxo. É importante que seja reproduzível.
-- **Pra onde vai**: é o destino. Quem é o consumidor ou qual a aplicação prática disso.
-- **Qual o resultado**: é a descrição dos resultados esperados, desejados ou comprovados.
+- **O que é**: ou qual a ideia disso que está sendo abordado.
+- **Qual o objetivo**: por que isso está sendo ou foi desenvolvido. 
+- **De onde vem**: quais as necessidades ou origem dessa demanda. A motivação.
+- **Como fazer**:  qual o procedimento, código, sequência ou fluxo. 
+- **Pra onde vai**:  que é o consumidor disso. Qual a aplicação prática disso.
+- **Qual o resultado**: descrição dos resultados previstos ou comprovados.
 
 
 ## Objetivo {-}
 
-Possibilitar que as ideias e conceitos desenvolvidos a mais de cem anos e que foram testados e validados novamente em 2010 possam ser usados para desenvolvimento humano seja nos negócios, projetos pessoais ou comunitários dentro e fora do agronegócio e para isso, algumas premissas foram definidas:
+Possibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:
 
-- Facilitar o entendimento dos conceitos usando linguagem simples e exemplos práticos do dia a dia.
+- Usar linguagem simples e exemplos práticos.
 
-- Permitir a reprodução usando código reproduzível na linguagem de computação científica R.
+- Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.
 
-- Permitir a interação e compartilhamento de ideias e experiências. O leitor poderá sugerir,  fazer alterações, adicionar complementos e ideias que enriqueça esse trabalho para todos.
+- Permitir interação e compartilhamento de ideias. O leitor poderá sugerir, adicionar complementos e ideias que enriqueça o conteúdo do livro.
 
-- Ser um gatilho para reflexão e geração de ideias próprias ao invés de um livro de boas práticas.
+- Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.
 
 ## Motivação {-}
 
-Em 2020, momento em que este livro está sendo escrito, fenômenos importantes estão acontecendo e optei por destacar quatro deles os quais podem se tornar desafiadores para todos as nações.
+Em 2020, momento em que este livro está sendo escrito, fenômenos importantes estão acontecendo e optei por destacar 4 os quais podem se tornar desafiadores para todos as nações.
 
 - **Transição demográfica** que remete a ideia de desafios estruturais e se refere a mudança histórica de taxas de natalidade, mortalidade e crescimento populacional decorrentes do avanço da medicina, urbanização e desenvolvimento de novas técnologias.
-  - **Estamos ficando mais velhos** os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.
+  - **Estamos ficando mais velhos** onde os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.
   - **Estamos ficando mais urbanos** em 2020 cerca de 55% da população mundial vive em vilas e cidades. O acesso a economia e a sociedade digital em áreas ruais é um processo contínuo onde pequenos agricultores podem desempenhar papel vital na produção de alimentos e na proteção do meio ambiente.
   
-- **Desenvolvimento de tecnologias disruptivas** que remete a ideia de produtividade total dos fatores, aumento da interação, de descobertas científicas e instrumentos que potencializam as capacidades humanas. A inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição genética CRISPR e luz sincrotron entre outras, estão em constante evolução modificando significativamente o modo como as coisas são feitas. 
+- **Desenvolvimento de tecnologias disruptivas** que remete a ideia de produtividade total dos fatores, aumento da interação entre as pessoas, de descobertas científicas e instrumentos que potencializam as capacidades humanas. A inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição de DNA CRISPR e luz sincrotron por exemplo, podem provocar grandes mudanças no modo como as coisas são feitas. 
 
 - **Atividade economica em países emergentes**  que remete a ideia de mudança no padrão de vida. Em 2020 países como Indonésia, Africa do Sul, Russia, México, Malasia, Colombia, Polônia, Chile, Hingria, Tailandia, Turquia, Brasil, China e Índia são considerandos países emergentes. Boa parte desses países, têm feito progressos notáveis no fortalecimento de seus políticas macroeconômicas desde a virada do século o que os permitiu mais do que dobrar a renda per capita em média. 
 
@@ -52,6 +52,6 @@ Em 2020, momento em que este livro está sendo escrito, fenômenos importantes e
 
 ## Desafios/Oportunidades da Agroindustria {-}
 
-- **Na perspectiva de demanda** quantidades maiores de produtos em variedade e volume, exigência por qualidade e padronização, informação, segurança, cuidado com o meio ambiente as comunidades todas são demandas crescentes.
+- **Na perspectiva de demanda** necessidade cada vez maior de produtos(variedade e volume), exigência por qualidade e padronização, informação, segurança, cuidados com meio ambiente e comunidades.
 
-- **Na perspectiva de produção** melhoria na comunicação e relacionamento com consumidores, práticas de cultivo para lidar com trade-off entre aumento de demanda e restrições de área, aumento de produtivide, qualidade e  eficiência no aproveitamento de recursos, desenvolvimento de novos produtos e mercados, redução de desperdícios e perdas são variáveis importantes.
+- **Na perspectiva de produção** a busca por melhoria na comunicação e relacionamento com consumidores, práticas de cultivo para lidar com trade-off entre aumento de demanda e restrições de área, aumento de produtivide, qualidade, eficiência no aproveitamento de recursos, desenvolvimento de novos produtos e mercados, redução de desperdícios e perdas.
