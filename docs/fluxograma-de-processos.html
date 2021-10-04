@@ -53,8 +53,76 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libs/viz-1.8.2/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.6.1/grViz.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -224,6 +292,32 @@
 <div id="como-fazer" class="section level2 unnumbered">
 <h2>Como fazer</h2>
 <p>Os símbolos mais comuns utilizados na montagem de um fluxograma de bloco são:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="fluxograma-de-processos.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DiagrammeR)</span>
+<span id="cb1-2"><a href="fluxograma-de-processos.html#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="fluxograma-de-processos.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">grViz</span>(<span class="st">&quot;</span></span>
+<span id="cb1-4"><a href="fluxograma-de-processos.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">digraph boxes_and_circles {</span></span>
+<span id="cb1-5"><a href="fluxograma-de-processos.html#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="fluxograma-de-processos.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">  # a &#39;graph&#39; statement</span></span>
+<span id="cb1-7"><a href="fluxograma-de-processos.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">  graph [overlap = true, fontsize = 10]</span></span>
+<span id="cb1-8"><a href="fluxograma-de-processos.html#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="fluxograma-de-processos.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">  # several &#39;node&#39; statements</span></span>
+<span id="cb1-10"><a href="fluxograma-de-processos.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">  node [shape = box,</span></span>
+<span id="cb1-11"><a href="fluxograma-de-processos.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">        fontname = Helvetica]</span></span>
+<span id="cb1-12"><a href="fluxograma-de-processos.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">  A; B; C; D; E; F</span></span>
+<span id="cb1-13"><a href="fluxograma-de-processos.html#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="fluxograma-de-processos.html#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="st">  node [shape = circle,</span></span>
+<span id="cb1-15"><a href="fluxograma-de-processos.html#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="st">        fixedsize = true,</span></span>
+<span id="cb1-16"><a href="fluxograma-de-processos.html#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">        width = 0.9] // sets as circles</span></span>
+<span id="cb1-17"><a href="fluxograma-de-processos.html#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">  1; 2; 3; 4; 5; 6; 7; 8</span></span>
+<span id="cb1-18"><a href="fluxograma-de-processos.html#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="fluxograma-de-processos.html#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">  # several &#39;edge&#39; statements</span></span>
+<span id="cb1-20"><a href="fluxograma-de-processos.html#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="st">  A-&gt;1 B-&gt;2 B-&gt;3 B-&gt;4 C-&gt;A</span></span>
+<span id="cb1-21"><a href="fluxograma-de-processos.html#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="st">  1-&gt;D E-&gt;A 2-&gt;4 1-&gt;5 1-&gt;F</span></span>
+<span id="cb1-22"><a href="fluxograma-de-processos.html#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">  E-&gt;6 4-&gt;6 5-&gt;7 6-&gt;7 3-&gt;8</span></span>
+<span id="cb1-23"><a href="fluxograma-de-processos.html#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
+<span id="cb1-24"><a href="fluxograma-de-processos.html#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span>)</span></code></pre></div>
+<div id="htmlwidget-175f1d7acc6ddc892073" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-175f1d7acc6ddc892073">{"x":{"diagram":"\ndigraph boxes_and_circles {\n\n  # a \"graph\" statement\n  graph [overlap = true, fontsize = 10]\n\n  # several \"node\" statements\n  node [shape = box,\n        fontname = Helvetica]\n  A; B; C; D; E; F\n\n  node [shape = circle,\n        fixedsize = true,\n        width = 0.9] // sets as circles\n  1; 2; 3; 4; 5; 6; 7; 8\n\n  # several \"edge\" statements\n  A->1 B->2 B->3 B->4 C->A\n  1->D E->A 2->4 1->5 1->F\n  E->6 4->6 5->7 6->7 3->8\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <ul>
 <li><p><strong>Limites</strong>: representado por figura em formato de elipse indica o início e o fim do processo.</p></li>
 <li><p><strong>Operação</strong>: é representada por um retângulo, e sinaliza uma etapa do processo ou atividade. O nome da etapa e quem a executa são registrados no interior do retângulo.</p></li>
