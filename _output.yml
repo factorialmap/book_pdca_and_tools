@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Médoto PDCA e Ferramentas da Qualidade</a></li>
+        <li><a href="./">O método PDCA e Ferramentas da Qualidade na melhoria contínua</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Feito usando bookdown</a></li>
     sharing:

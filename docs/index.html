@@ -24,7 +24,7 @@
 <meta name="author" content="Marcelo Carvalho" />
 
 
-<meta name="date" content="2021-10-03" />
+<meta name="date" content="2021-10-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,9 +54,13 @@
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<script src="libs/viz-1.8.2/viz.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
 <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/grViz-binding-1.0.6.1/grViz.js"></script>
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.6.1/DiagrammeR.js"></script>
 
 
 <style type="text/css">
@@ -138,14 +142,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Médoto PDCA e Ferramentas da Qualidade</a></li>
+<li><a href="./">O método PDCA e Ferramentas da Qualidade na melhoria contínua</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#como-o-livro-é-organizado"><i class="fa fa-check"></i>Como o livro é organizado</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#objetivo"><i class="fa fa-check"></i>Objetivo</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#agradecimento"><i class="fa fa-check"></i>Agradecimento</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i>Introdução</a>
 <ul>
-<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#objetivo"><i class="fa fa-check"></i>Objetivo</a></li>
-<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#motivação"><i class="fa fa-check"></i>Motivação</a></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#desafiosoportunidades-da-agroindustria"><i class="fa fa-check"></i>Desafios/Oportunidades da Agroindustria</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="conceitos.html"><a href="conceitos.html"><i class="fa fa-check"></i><b>1</b> Conceitos</a>
@@ -266,15 +273,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">O Método PDCA e Ferramentas da Qualidade para melhoria contínua</h1>
 <p class="author"><em>Marcelo Carvalho</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-10-03</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>2021-10-10</em></p>
 </div>
 <div id="prefácio" class="section level1 unnumbered">
 <h1>Prefácio</h1>
 <p><img src="images/pdca_capa.PNG" style="display: block; margin: auto;" /></p>
+<p><strong>A melhoria de processos</strong> envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios,perdas, atender determinados padrões, melhorar a qualidade e experiência de consumidores finais seja de um produto, serviço ou ideia.</p>
 <p><strong>O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade</strong> são conceitos usados parar identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras dos conceitos e implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.</p>
 <p>Os conceitos abordados neste livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores em muitos países.</p>
+<div id="como-o-livro-é-organizado" class="section level2 unnumbered">
+<h2>Como o livro é organizado</h2>
+<p>Para facilitar a compreensão e busca dos temas abordados, todos os capítulos serão organizados com os seguintes tópicos:</p>
+<ul>
+<li><strong>O que é</strong>: qua a ideia do que está sendo abordado.</li>
+<li><strong>Qual o objetivo</strong>: por que isso está sendo ou foi desenvolvido.</li>
+<li><strong>De onde vem</strong>: quais as necessidades ou origem dessa demanda. A motivação.</li>
+<li><strong>Como fazer</strong>: qual o procedimento, código, sequência ou fluxo.</li>
+<li><strong>Pra onde vai</strong>: que é o consumidor disso. Qual a aplicação prática disso.</li>
+<li><strong>Qual o resultado</strong>: descrição dos resultados previstos ou comprovados.</li>
+</ul>
+</div>
+<div id="objetivo" class="section level2 unnumbered">
+<h2>Objetivo</h2>
+<p>Possibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:</p>
+<ul>
+<li><p>Usar linguagem simples e exemplos práticos.</p></li>
+<li><p>Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.</p></li>
+<li><p>Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.</p></li>
+<li><p>Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.</p></li>
+</ul>
+</div>
+<div id="agradecimento" class="section level2 unnumbered">
+<h2>Agradecimento</h2>
 <p>Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, <span class="citation">@paulinyzito</span>, SilvioBras, <span class="citation">@priscilazavadil</span>, Ana Incerti, <span class="citation">@Muxtaa</span>, FlávioCorrêa, <span class="citation">@factorialmap</span></p>
 
+</div>
 </div>
             </section>
 

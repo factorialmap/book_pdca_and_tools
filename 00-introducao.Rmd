@@ -14,31 +14,7 @@ favicon: "favicon.ico"
 
 # Introdução {-}
 
-Este é livro prático e para facilitar a compreensão dos temas abordados,  das regras para contribuição no conteúdo e a busca dos temas, ele será organizado da seguinte forma:
-
-- **O que é**: ou qual a ideia disso que está sendo abordado.
-- **Qual o objetivo**: por que isso está sendo ou foi desenvolvido. 
-- **De onde vem**: quais as necessidades ou origem dessa demanda. A motivação.
-- **Como fazer**:  qual o procedimento, código, sequência ou fluxo. 
-- **Pra onde vai**:  que é o consumidor disso. Qual a aplicação prática disso.
-- **Qual o resultado**: descrição dos resultados previstos ou comprovados.
-
-
-## Objetivo {-}
-
-Possibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:
-
-- Usar linguagem simples e exemplos práticos.
-
-- Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.
-
-- Permitir interação e compartilhamento de ideias. O leitor poderá sugerir, adicionar complementos e ideias que enriqueça o conteúdo do livro.
-
-- Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.
-
-## Motivação {-}
-
-Em 2020, momento em que este livro está sendo escrito, fenômenos importantes estão acontecendo e optei por destacar 4 os quais podem se tornar desafiadores para todos as nações.
+Em 2020, momento em que este livro está sendo escrito, fenômenos importantes estão acontecendo e 4 deles podem se tornar desafiadores para todos as nações. A ideia desse livro é explorar alguns conceitos e ferramentas que podem auxiliar os profissionais com o objetivo de transformar os desafios em oportunidades.
 
 - **Transição demográfica** que remete a ideia de desafios estruturais e se refere a mudança histórica de taxas de natalidade, mortalidade e crescimento populacional decorrentes do avanço da medicina, urbanização e desenvolvimento de novas técnologias.
   - **Estamos ficando mais velhos** onde os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.

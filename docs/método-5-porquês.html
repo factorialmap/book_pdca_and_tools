@@ -24,7 +24,7 @@
 <meta name="author" content="Marcelo Carvalho" />
 
 
-<meta name="date" content="2021-10-03" />
+<meta name="date" content="2021-10-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,9 +54,13 @@
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<script src="libs/viz-1.8.2/viz.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
 <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/grViz-binding-1.0.6.1/grViz.js"></script>
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.6.1/DiagrammeR.js"></script>
 
 
 <style type="text/css">
@@ -138,14 +142,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Médoto PDCA e Ferramentas da Qualidade</a></li>
+<li><a href="./">O método PDCA e Ferramentas da Qualidade na melhoria contínua</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#como-o-livro-é-organizado"><i class="fa fa-check"></i>Como o livro é organizado</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#objetivo"><i class="fa fa-check"></i>Objetivo</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#agradecimento"><i class="fa fa-check"></i>Agradecimento</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i>Introdução</a>
 <ul>
-<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#objetivo"><i class="fa fa-check"></i>Objetivo</a></li>
-<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#motivação"><i class="fa fa-check"></i>Motivação</a></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#desafiosoportunidades-da-agroindustria"><i class="fa fa-check"></i>Desafios/Oportunidades da Agroindustria</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="conceitos.html"><a href="conceitos.html"><i class="fa fa-check"></i><b>1</b> Conceitos</a>

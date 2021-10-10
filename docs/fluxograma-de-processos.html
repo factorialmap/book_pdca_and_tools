@@ -24,7 +24,7 @@
 <meta name="author" content="Marcelo Carvalho" />
 
 
-<meta name="date" content="2021-10-03" />
+<meta name="date" content="2021-10-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,9 +54,13 @@
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<script src="libs/viz-1.8.2/viz.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
 <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/grViz-binding-1.0.6.1/grViz.js"></script>
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.6.1/DiagrammeR.js"></script>
 
 
 <style type="text/css">
@@ -138,14 +142,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Médoto PDCA e Ferramentas da Qualidade</a></li>
+<li><a href="./">O método PDCA e Ferramentas da Qualidade na melhoria contínua</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#como-o-livro-é-organizado"><i class="fa fa-check"></i>Como o livro é organizado</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#objetivo"><i class="fa fa-check"></i>Objetivo</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#agradecimento"><i class="fa fa-check"></i>Agradecimento</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i>Introdução</a>
 <ul>
-<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#objetivo"><i class="fa fa-check"></i>Objetivo</a></li>
-<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#motivação"><i class="fa fa-check"></i>Motivação</a></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#desafiosoportunidades-da-agroindustria"><i class="fa fa-check"></i>Desafios/Oportunidades da Agroindustria</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="conceitos.html"><a href="conceitos.html"><i class="fa fa-check"></i><b>1</b> Conceitos</a>
@@ -267,76 +274,99 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Capitulo 2</span> Fluxograma de Processos</h1>
 <div id="o-que-é" class="section level2 unnumbered">
 <h2>O que é</h2>
-<p>O fluxograma é uma representação gráfica das etapas de um processo e a relação entre elas. Além da sequência de atividades, o fluxograma mostra o que é realizado em cada etapa, materiais e serviços que entram e saem do processo, decisões que devem ser tomadas e também as pessoas envolvidas. Utiliza símbolos que são reconhecidos facilmente para representar cada etapa, pessoas ou setores envolvidos no processo (BRASSARD, 1994).</p>
-<p>O uso de descrições detalhadas das atividades do negócio, nos permite compreende-lo melhor e reproduzi-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão. O conjunto desses elementos (documentos e desenhos).</p>
+<p>Representação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é permitir ao usuário ter uma visão do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.</p>
+<p>Não há uma data precisa do início do uso dessa ideia mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.</p>
+<div class="figure">
+<img src="images/papiro_ani.jpg" alt="" />
+<p class="caption">Figura 2 - Papiro de Ani:A pesagem do coração</p>
+</div>
+<p>O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.</p>
 <div class="figure">
 <img src="images/figura_processo.PNG" alt="" />
-<p class="caption">Figura 2 - Ideia do fluxograma de processos</p>
+<p class="caption">Figura 3 - fluxograma de processo industrial de metais</p>
 </div>
 </div>
 <div id="qual-o-objetivo" class="section level2 unnumbered">
 <h2>Qual o objetivo</h2>
 <ul>
-<li>Entender um processo e identificar as oportunidades de melhoria.</li>
-<li>facilitar a comunicação entre as pessoas envolvidas no processo e disseminar informações.</li>
+<li><p>Entender um processo e identificar as oportunidades de melhoria.</p></li>
+<li><p>Facilitar a comunicação através da visualização do todo e suas relações</p></li>
+<li><p>Facilitar a expressão de ideias, formulação de hipóteses e discussões.</p></li>
+<li><p>Analisar o fenômeno em diferentes perspectivas</p></li>
 </ul>
 </div>
 <div id="de-onde-vem" class="section level2 unnumbered">
 <h2>De onde vem</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li>Da necessidade ter uma visão global do assunto que está sendo discutido e compreender melhor as relações e interações para que ideias sejam geradas e melhorias ou até estratégias ou planos táticos possam ser propostos.</li>
 </ul>
 </div>
 <div id="como-fazer" class="section level2 unnumbered">
 <h2>Como fazer</h2>
-<p>Os símbolos mais comuns utilizados na montagem de um fluxograma de bloco são:</p>
+<p>Existem várias formas de criar um fluxograma de processos sendo o lápis e o papel um dos mais eficiêntes por outro lado no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote <code>DiagrammeR</code> onde:</p>
+<ul>
+<li><strong>mermaid</strong> é a função que chamará a biblioteca em javascript que fará o diagrama</li>
+<li><strong>graph LR</strong> é a orientação do digrama que pode ser TD=top down, LR = left to right etc.</li>
+<li><strong>A, B, C, D..N</strong> é a definição de um nó</li>
+<li><strong>&gt;], [], (), (())</strong> é o formato do nó</li>
+<li><strong>–&gt;</strong> é a direção do conector</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="fluxograma-de-processos.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DiagrammeR)</span>
 <span id="cb1-2"><a href="fluxograma-de-processos.html#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="fluxograma-de-processos.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">grViz</span>(<span class="st">&quot;</span></span>
-<span id="cb1-4"><a href="fluxograma-de-processos.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">digraph boxes_and_circles {</span></span>
-<span id="cb1-5"><a href="fluxograma-de-processos.html#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="fluxograma-de-processos.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">  # a &#39;graph&#39; statement</span></span>
-<span id="cb1-7"><a href="fluxograma-de-processos.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">  graph [overlap = true, fontsize = 10]</span></span>
-<span id="cb1-8"><a href="fluxograma-de-processos.html#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="fluxograma-de-processos.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">  # several &#39;node&#39; statements</span></span>
-<span id="cb1-10"><a href="fluxograma-de-processos.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">  node [shape = box,</span></span>
-<span id="cb1-11"><a href="fluxograma-de-processos.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">        fontname = Helvetica]</span></span>
-<span id="cb1-12"><a href="fluxograma-de-processos.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">  A; B; C; D; E; F</span></span>
-<span id="cb1-13"><a href="fluxograma-de-processos.html#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="fluxograma-de-processos.html#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="st">  node [shape = circle,</span></span>
-<span id="cb1-15"><a href="fluxograma-de-processos.html#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="st">        fixedsize = true,</span></span>
-<span id="cb1-16"><a href="fluxograma-de-processos.html#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">        width = 0.9] // sets as circles</span></span>
-<span id="cb1-17"><a href="fluxograma-de-processos.html#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">  1; 2; 3; 4; 5; 6; 7; 8</span></span>
-<span id="cb1-18"><a href="fluxograma-de-processos.html#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="fluxograma-de-processos.html#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">  # several &#39;edge&#39; statements</span></span>
-<span id="cb1-20"><a href="fluxograma-de-processos.html#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="st">  A-&gt;1 B-&gt;2 B-&gt;3 B-&gt;4 C-&gt;A</span></span>
-<span id="cb1-21"><a href="fluxograma-de-processos.html#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="st">  1-&gt;D E-&gt;A 2-&gt;4 1-&gt;5 1-&gt;F</span></span>
-<span id="cb1-22"><a href="fluxograma-de-processos.html#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">  E-&gt;6 4-&gt;6 5-&gt;7 6-&gt;7 3-&gt;8</span></span>
-<span id="cb1-23"><a href="fluxograma-de-processos.html#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb1-24"><a href="fluxograma-de-processos.html#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span>)</span></code></pre></div>
-<div id="htmlwidget-175f1d7acc6ddc892073" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-175f1d7acc6ddc892073">{"x":{"diagram":"\ndigraph boxes_and_circles {\n\n  # a \"graph\" statement\n  graph [overlap = true, fontsize = 10]\n\n  # several \"node\" statements\n  node [shape = box,\n        fontname = Helvetica]\n  A; B; C; D; E; F\n\n  node [shape = circle,\n        fixedsize = true,\n        width = 0.9] // sets as circles\n  1; 2; 3; 4; 5; 6; 7; 8\n\n  # several \"edge\" statements\n  A->1 B->2 B->3 B->4 C->A\n  1->D E->A 2->4 1->5 1->F\n  E->6 4->6 5->7 6->7 3->8\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-<ul>
-<li><p><strong>Limites</strong>: representado por figura em formato de elipse indica o início e o fim do processo.</p></li>
-<li><p><strong>Operação</strong>: é representada por um retângulo, e sinaliza uma etapa do processo ou atividade. O nome da etapa e quem a executa são registrados no interior do retângulo.</p></li>
-<li><p><strong>Decisão</strong>: é representado por um losango e indica um ponto em que alguma decisão deve ser tomada. Duas setas saindo do losango mostram a direção do processo em função da resposta que geralmente é SIM ou NÃO.</p></li>
-<li><p><strong>Sentido fluxo</strong>: representado por uma linha com seta e indica o sentido e a sequência do processo.</p></li>
-</ul>
+<span id="cb1-3"><a href="fluxograma-de-processos.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span>(<span class="st">&quot;</span></span>
+<span id="cb1-4"><a href="fluxograma-de-processos.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
+<span id="cb1-5"><a href="fluxograma-de-processos.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="st">A&gt;Mat. prima]--&gt;B[Produção]</span></span>
+<span id="cb1-6"><a href="fluxograma-de-processos.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">B--&gt;C[Estoque PA]</span></span>
+<span id="cb1-7"><a href="fluxograma-de-processos.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">C--&gt;D[Demanda]</span></span>
+<span id="cb1-8"><a href="fluxograma-de-processos.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">E&gt;Mão obra]--&gt;B</span></span>
+<span id="cb1-9"><a href="fluxograma-de-processos.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">F&gt;Máquina]--&gt;B</span></span>
+<span id="cb1-10"><a href="fluxograma-de-processos.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span>, <span class="at">height=</span><span class="st">&#39;100%&#39;</span>, <span class="at">width=</span><span class="st">&#39;100%&#39;</span>)</span></code></pre></div>
+<div id="htmlwidget-b744ca6e299752fd81c4" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b744ca6e299752fd81c4">{"x":{"diagram":"\ngraph LR\nA>Mat. prima]-->B[Produção]\nB-->C[Estoque PA]\nC-->D[Demanda]\nE>Mão obra]-->B\nF>Máquina]-->B\n"},"evals":[],"jsHooks":[]}</script>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="fluxograma-de-processos.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span> (<span class="st">&quot;</span></span>
+<span id="cb2-2"><a href="fluxograma-de-processos.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
+<span id="cb2-3"><a href="fluxograma-de-processos.html#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="fluxograma-de-processos.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Cliente</span></span>
+<span id="cb2-5"><a href="fluxograma-de-processos.html#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="st">A[Vendido no limite]</span></span>
+<span id="cb2-6"><a href="fluxograma-de-processos.html#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
+<span id="cb2-7"><a href="fluxograma-de-processos.html#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="fluxograma-de-processos.html#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Corretora</span></span>
+<span id="cb2-9"><a href="fluxograma-de-processos.html#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st">A--&gt;B{Tem saldo?}</span></span>
+<span id="cb2-10"><a href="fluxograma-de-processos.html#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="st">B--&gt;|Sim|C[Manter posição]</span></span>
+<span id="cb2-11"><a href="fluxograma-de-processos.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="st">C--&gt; D[Novo pregão]</span></span>
+<span id="cb2-12"><a href="fluxograma-de-processos.html#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="st">D--&gt; B</span></span>
+<span id="cb2-13"><a href="fluxograma-de-processos.html#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
+<span id="cb2-14"><a href="fluxograma-de-processos.html#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="fluxograma-de-processos.html#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Compliance</span></span>
+<span id="cb2-16"><a href="fluxograma-de-processos.html#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="st">B --&gt;|Não| F[Encerra posição]</span></span>
+<span id="cb2-17"><a href="fluxograma-de-processos.html#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
+<span id="cb2-18"><a href="fluxograma-de-processos.html#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="fluxograma-de-processos.html#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span>, <span class="at">height=</span><span class="st">&#39;100%&#39;</span>, <span class="at">width=</span><span class="st">&#39;100%&#39;</span>)</span></code></pre></div>
+<div id="htmlwidget-9758844d686e75c43169" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9758844d686e75c43169">{"x":{"diagram":"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA-->B{Tem saldo?}\nB-->|Sim|C[Manter posição]\nC--> D[Novo pregão]\nD--> B\nend\n\nsubgraph Compliance\nB -->|Não| F[Encerra posição]\nend\n\n"},"evals":[],"jsHooks":[]}</script>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="fluxograma-de-processos.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span>(<span class="st">&quot;</span></span>
+<span id="cb3-2"><a href="fluxograma-de-processos.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
+<span id="cb3-3"><a href="fluxograma-de-processos.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">    A[Estoque MP] --&gt;|materia prima| B(Produção)</span></span>
+<span id="cb3-4"><a href="fluxograma-de-processos.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="st">    B --&gt; C{Sob pedido?}</span></span>
+<span id="cb3-5"><a href="fluxograma-de-processos.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="st">    C --&gt;|Sim| D[Venda]</span></span>
+<span id="cb3-6"><a href="fluxograma-de-processos.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="st">    C --&gt;|Não| E[Estoque Prod. Acabado]</span></span>
+<span id="cb3-7"><a href="fluxograma-de-processos.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span>, <span class="at">height=</span><span class="st">&#39;100%&#39;</span>, <span class="at">width=</span><span class="st">&#39;100%&#39;</span>)</span></code></pre></div>
+<div id="htmlwidget-7740b1f8a0898f15a6fd" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7740b1f8a0898f15a6fd">{"x":{"diagram":"\ngraph LR\n    A[Estoque MP] -->|materia prima| B(Produção)\n    B --> C{Sob pedido?}\n    C -->|Sim| D[Venda]\n    C -->|Não| E[Estoque Prod. Acabado]\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="pra-onde-vai" class="section level2 unnumbered">
 <h2>Pra onde vai</h2>
 <ul>
 <li>O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias entre outras aplicações.</li>
+<li>Como se trata de uma ferramenta de análise de fenômeno ele fornece dados para o próximo passo que é a analise de causa raiz do problema</li>
 </ul>
 </div>
 <div id="qual-o-resultado" class="section level2 unnumbered">
 <h2>Qual o resultado</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Eficiência no aproveitamento de recurso de tempo e mão de obra atraves da facilidade de compreenção e geração de ideias.</p></li>
+<li><p>Engajamento da equipe uma vez que todos compreendem o assunto mesmo quando foge sua área de domínio.</p></li>
+<li><p>Fixação do assunto abordado na mente dos envolvidos pois simbolos e imagens são melhores armazenados na memória humana.</p></li>
 </ul>
 
 </div>
